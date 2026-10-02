@@ -96,3 +96,5 @@ async function main() {
   matchMedia("(prefers-color-scheme: dark)").addEventListener("change", draw);
 }
 main();
+
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
