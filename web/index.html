@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>相場天気図 | 日経VI × Fear & Greed</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>相場天気図 <small>日経VI × Fear &amp; Greed</small></h1>
+    <p id="meta" class="muted">読み込み中…</p>
+  </header>
+  <div id="banner" class="banner" hidden></div>
+
+  <section class="cards">
+    <article class="card weather"><div id="icon" class="icon">…</div><div><div class="label">今日の相場天気</div><div id="wlabel" class="big">–</div><div id="wsub" class="muted"></div></div></article>
+    <article class="card"><div class="label">日経VI</div><div id="vi" class="big">–</div><div id="vid" class="muted"></div></article>
+    <article class="card"><div class="label">Fear &amp; Greed</div><div id="fg" class="big">–</div><div id="fgd" class="muted"></div></article>
+    <article class="card"><div class="label">恐怖度(合成 0–100)</div><div id="fear" class="big">–</div><div class="muted">VIの1年内順位 と (100−F&amp;G) の平均</div></article>
+  </section>
+
+  <section class="panel"><h2>日経VI(左軸)と Fear &amp; Greed(右軸)</h2><div id="chart"></div>
+    <div class="legend"><span class="sw vi"></span>日経VI <span class="sw fg"></span>Fear &amp; Greed</div>
+  </section>
+
+  <section class="panel"><h2>恐怖度の推移(天気帯)</h2><div id="chart2"></div></section>
+
+  <footer class="muted">投資助言ではありません。データ出典: 日経平均VI(日本経済新聞社)、CNN Fear &amp; Greed Index。</footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+:root{--bg:#f6f7f9;--card:#fff;--fg:#1c2330;--muted:#667085;--line:#e3e6ec;--vi:#d9480f;--gd:#1c7ed6}
+@media (prefers-color-scheme:dark){:root{--bg:#10141c;--card:#1a202c;--fg:#e8ecf3;--muted:#98a2b3;--line:#2b3344;--vi:#ff8f5a;--gd:#5aa9ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif}
+main{max-width:1000px;margin:0 auto;padding:16px}
+h1{font-size:1.5rem;margin:8px 0 0}h1 small{font-size:.9rem;color:var(--muted);font-weight:400;margin-left:.5em}
+h2{font-size:1rem;margin:0 0 8px}
+.muted{color:var(--muted);font-size:.85rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:16px 0}
+.card,.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.panel{margin-bottom:16px}
+.weather{display:flex;gap:12px;align-items:center}
+.icon{font-size:3rem;line-height:1}
+.label{font-size:.8rem;color:var(--muted)}
+.big{font-size:1.7rem;font-weight:700}
+.banner{background:#fff4e5;color:#7a4b00;border:1px solid #f3c77a;border-radius:8px;padding:8px 12px}
+.legend{font-size:.85rem;color:var(--muted)}
+.sw{display:inline-block;width:14px;height:3px;margin:0 4px 3px 12px;vertical-align:middle}
+.sw.vi{background:var(--vi)}.sw.fg{background:var(--gd)}
+svg{width:100%;height:auto;display:block}
+svg text{fill:var(--muted);font-size:11px}
+footer{margin:24px 0}
